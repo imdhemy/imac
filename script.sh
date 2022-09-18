@@ -23,7 +23,7 @@ brew install github --cask
 brew tap homebrew/cask-fonts
 brew install font-fira-code
 
-# Install Docker Desktop if OS is Monterey
-if [[ $(sw_vers -productVersion) == "12.0" ]]; then
-    brew install --cask docker
+# Install Docker Desktop if OS is 12.0 or higher
+if [[ $(sw_vers -productVersion | cut -d '.' -f 2) -ge 12 ]]; then
+    brew install docker --cask
 fi

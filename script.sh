@@ -27,3 +27,6 @@ brew install font-fira-code
 if [[ $(sw_vers -productVersion | cut -d '.' -f 2) -ge 12 ]]; then
     brew install docker --cask
 fi
+
+# Install Spectacle window manager
+brew install spectacle --cask

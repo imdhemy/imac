@@ -32,3 +32,10 @@ echo "Key copied to clipboard. Paste it into GitHub."
 
 # Open browser to GitHub GPG Key page
 open https://github.com/settings/gpg/new
+
+# Configure Git [user], [gpg] and [commit]
+git config --global user.name "Mohamad Eldhemy"
+git config --global user.email "imdhemy@gmail.com"
+git config --global user.signingkey "$GPGID"
+git config --global gpg.program gpg
+git config --global commit.gpgsign true
